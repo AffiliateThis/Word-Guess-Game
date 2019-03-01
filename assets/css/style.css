@@ -1,0 +1,11 @@
+/*Homepage*/
+body {
+  background-image: url(assets/images/mahavishnu.jpg);
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+}
+
+#col-12 col-md-12 {
+}
