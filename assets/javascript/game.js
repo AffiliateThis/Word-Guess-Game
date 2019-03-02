@@ -1,3 +1,5 @@
+// I can't seem to preview this and console log it in the browser
+
 var musicians = [
   "  Billy Cohbam ",
   "  Al Di Meola",
@@ -6,12 +8,6 @@ var musicians = [
   " Jaco Pastorius",
   "Wayne Shorter"
 ];
-
-// var musicianType = musicians[Math.floor(Math.random() * musicians.length)];
-
-// document.getElementById("button1").addEventListener("click", function() {
-//   alert("This is about to start");
-// });
 
 var s;
 var count = 0;
@@ -32,9 +28,22 @@ function click() {
 var word = musicianType;
 var remainingLetters = word.length;
 
-while (remainingLetters > 0) {}
+// while (remainingLetters > 0) {}
 
 var guess = prompt("Guess a letter, or click Cancel to stop playing");
+
+// if the player guesses and it is incorrect, it is null
+
+// if (guess === null){
+
+// break;
+// }
+// } else if (guess.length !== 1) {
+//   alert ("Please enter a letter");
+// } else {
+
+// for (var j)
+// }
 
 //     if (musicianType[i] === letter) {
 //         answerArray[i] = letter;
@@ -44,22 +53,6 @@ var guess = prompt("Guess a letter, or click Cancel to stop playing");
 
 // count++;
 
-// $("#musicians").html("<h1>Drink UP!</h1>");
-
 // function showmessage() {
 //   let message = 0;
 // }
-
-// $(".load-first").click(function() {
-//   $(".load-container").load("/test-1.html", function() {
-//     // now load-second button is available, register the click handler
-//     $(".load-second").click(function() {
-//       $(".load-container").load("/test-2.html", function() {
-//         // now load-third button is available, register the click handler
-//         $(".load-third").click(function() {
-//           $(".load-container").load("/test-3.html");
-//         });
-//       });
-//     });
-//   });
-// });
