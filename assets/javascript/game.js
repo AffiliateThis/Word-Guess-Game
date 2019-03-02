@@ -1,31 +1,65 @@
-var questionList = [
-  " Who is my favorite drummer from the jazz fusion era?: Billy Cohbam ",
-  " Who is my favorite guitarist from the jazz fusion era?: Al Di Meola",
-  " Who is my favorite bass player from the jazz fusion era: Stanley Clarke",
-  " Who is my favorite keyboardist from the jazz fusion era: Chick Corea",
-  " Which is my favorite band from the jazz fusion era: Return to Forever"
+var musicians = [
+  "  Billy Cohbam ",
+  "  Al Di Meola",
+  " Stanley Clarke",
+  " Chick Corea ",
+  " Jaco Pastorius",
+  "Wayne Shorter"
 ];
 
-$("#target").keyup(function() {
-  alert("btn btn-primary btn-lg.keydown() called.");
+// var musicianType = musicians[Math.floor(Math.random() * musicians.length)];
+
+// document.getElementById("button1").addEventListener("click", function() {
+//   alert("This is about to start");
+// });
+
+var s;
+var count = 0;
+var answerArray = [];
+
+var musicianType = musicians[Math.floor(Math.random() * musicians.length)];
+
+document.getElementById("button1").addEventListener("click", function() {
+  alert("This is about to start");
 });
 
-$("#musicians").html("<h1>Drink UP!</h1>");
-
-function showmessage() {
-  let message = 0;
+function click() {
+  for (var i = 0; i < musicianType.length; i++) {
+    answerArray[i] = "_";
+  }
 }
 
-$(".load-first").click(function() {
-  $(".load-container").load("/test-1.html", function() {
-    // now load-second button is available, register the click handler
-    $(".load-second").click(function() {
-      $(".load-container").load("/test-2.html", function() {
-        // now load-third button is available, register the click handler
-        $(".load-third").click(function() {
-          $(".load-container").load("/test-3.html");
-        });
-      });
-    });
-  });
-});
+var word = musicianType;
+var remainingLetters = word.length;
+
+while (remainingLetters > 0) {}
+
+var guess = prompt("Guess a letter, or click Cancel to stop playing");
+
+//     if (musicianType[i] === letter) {
+//         answerArray[i] = letter;
+//     }
+
+// }
+
+// count++;
+
+// $("#musicians").html("<h1>Drink UP!</h1>");
+
+// function showmessage() {
+//   let message = 0;
+// }
+
+// $(".load-first").click(function() {
+//   $(".load-container").load("/test-1.html", function() {
+//     // now load-second button is available, register the click handler
+//     $(".load-second").click(function() {
+//       $(".load-container").load("/test-2.html", function() {
+//         // now load-third button is available, register the click handler
+//         $(".load-third").click(function() {
+//           $(".load-container").load("/test-3.html");
+//         });
+//       });
+//     });
+//   });
+// });
